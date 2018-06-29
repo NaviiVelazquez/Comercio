@@ -1,2 +1,2 @@
 # Comercio
-Ejercicio de reportes con SPOON Diseñabdo una pagina web con HTML, CSS, & MDB
+Ejercicio de reportes con SPOON Diseñado una pagina web con HTML, CSS, & MDB
