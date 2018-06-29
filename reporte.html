@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tienda Navii</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="MDB/fontawesome/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link href="MDB/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design -->
+    <link href="MDB/css/mdb.min.css" rel="stylesheet">
+    <!-- Estilo personal de css -->
+    <link href="MDB/css/style2.css" rel="stylesheet">
+    <!-- Efecto Smooth -->
+    <script src="MDB/js/smooth-scroll.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+      // Selectors
+      ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+      header: null, // Selector for fixed headers (must be a valid CSS selector)
+      // Speed & Easing
+      speed: 2000, // Integer. How fast to complete the scroll in milliseconds
+      offset: 105, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+      easing: 'easeInOutCubic', // Easing pattern to use
+      customEasing: function (time) {
+        // Function. Custom easing pattern
+        // If this is set to anything other than null, will override the easing option above
+        // return <your formulate with time as a multiplier>
+        // Example: easeInOut Quad
+        return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+      },
+      // Callback API
+      before: function (anchor, toggle) {}, // Callback to run before scroll
+      after: function (anchor, toggle) {} // Callback to run after scroll
+      });
+    </script>
+  </head>
+  <body>
+
+    <!-- Main navigation -->
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <div class="container">
+        <img src="Imagenes/logo.png" width="40px" height="40px" class="mr-1">
+        <a class="navbar-brand black-text" href="#">
+          <strong>ONLINE SHOP</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link black-text" href="index.html"><strong>Inicio</strong>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link black-text" href="ubicacion.html"><strong>Ubicaciones</strong></a>
+              <span class="sr-only">(current)</span>
+            </li>
+            <li class="nav-item active" style="background-color:#fff;">
+              <a class="nav-link black-text" href="reporte.html"><strong>Reportes</strong></a>
+            </li>
+          </ul>
+          <form class="form-inline">
+            <div class="lg-form mt-0">
+              <input class="form-control form-control-sm mr-3 w-auto" type="text" placeholder="Buscar" aria-label="Search">
+              <i class="fa fa-search" aria-hidden="true" style="color:black;"></i>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <br><br><br>
+    <!-- Navbar -->
+    <!-- Main navigation -->
+
+
+    <!-- Acerca de -->
+    <div class="container-fluid">
+      <section class="my-5">
+        <!-- Section heading -->
+        <h2 class="wow fadeInDown h1-responsive font-weight-bold text-center my-5" data-wow-duration="0.6s" data-wow-delay="0.4s">Reportes Generados</h2>
+      </section>
+    </div>
+    <!-- Termina Acerca de -->
+
+
+    <!-- Card deck -->
+    <div class="container-fluid">
+      <div class="card-deck">
+        <!-- Card -->
+        <div class="wow rollIn card mb-4">
+          <!--Card image-->
+          <div class="view zoom overlay">
+            <img class="card-img-top" src="Imagenes/13.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <h4 class="text-justify card-title">Reporte 1. Monto de ventas por mes</h4>
+            <button type="button" data-toggle="modal" data-target="#modal1" class="btn btn-outline-warning btn-lg btn-block">Ver<i class="fa fa-folder-open ml-2" aria-hidden="true" style="color:orange;"></i></button>
+          </div>
+        </div>
+        <!-- Card -->
+        <!-- Card -->
+        <div class="wow rollIn card mb-4">
+          <!--Card image-->
+          <div class="view zoom overlay">
+            <img class="card-img-top" src="Imagenes/13.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <h4 class="text-justify card-title">Reporte 2. Monto total de venta por Año</h4>
+            <button type="button" data-toggle="modal" data-target="#modal2" class="btn btn-outline-warning btn-lg btn-block">Ver<i class="fa fa-folder-open ml-2" aria-hidden="true" style="color:orange;"></i></button>
+          </div>
+        </div>
+        <!-- Card -->
+        <!-- Card -->
+        <div class="wow rollIn card mb-4">
+          <!--Card image-->
+          <div class="view zoom overlay">
+            <img class="card-img-top" src="Imagenes/13.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <h4 class="text-justify card-title">Reporte 3. Total de ventas por forma de pago</h4>
+            <button type="button" data-toggle="modal" data-target="#modal3" class="btn btn-outline-warning btn-lg btn-block">Ver<i class="fa fa-folder-open ml-2" aria-hidden="true" style="color:orange;"></i></button>
+          </div>
+        </div>
+        <!-- Card -->
+      </div>
+    </div><br>
+    <!-- Card deck -->
+
+    <!-- Card deck -->
+    <div class="container-fluid">
+      <div class="card-deck">
+        <!-- Card -->
+        <div class="wow fadeInLeft card mb-4">
+          <!--Card image-->
+          <div class="view zoom overlay">
+            <img class="card-img-top" src="Imagenes/13.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <h4 class="text-justify card-title">Reporte 4. Productos mas vendidos por año</h4>
+            <button type="button" data-toggle="modal" data-target="#modal4" class="btn btn-outline-warning btn-lg btn-block">Ver<i class="fa fa-folder-open ml-2" aria-hidden="true" style="color:orange;"></i></button>
+          </div>
+        </div>
+        <!-- Card -->
+        <!-- Card -->
+        <div class="wow fadeInUp card mb-4">
+          <!--Card image-->
+          <div class="view zoom overlay">
+            <img class="card-img-top" src="Imagenes/13.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <h4 class="text-justify card-title">Reporte 5. Producto mas comprados por año y mes</h4>
+            <button type="button" data-toggle="modal" data-target="#modal5" class="btn btn-outline-warning btn-lg btn-block">Ver<i class="fa fa-folder-open ml-2" aria-hidden="true" style="color:orange;"></i></button>
+          </div>
+        </div>
+        <!-- Card -->
+        <!-- Card -->
+        <div class="wow fadeInRight card mb-4">
+          <!--Card image-->
+          <div class="view zoom overlay">
+            <img class="card-img-top" src="Imagenes/13.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <h4 class="text-justify card-title">Reporte 6. Monto total de dinero por provedor</h4>
+            <button type="button" data-toggle="modal" data-target="#modal6" class="btn btn-outline-warning btn-lg btn-block">Ver<i class="fa fa-folder-open ml-2" aria-hidden="true" style="color:orange;"></i></button>
+          </div>
+        </div>
+        <!-- Card -->
+      </div>
+    </div>
+    <br><br><br><br><br>
+    <!-- Card deck -->
+
+    <!-- Card deck -->
+    <div class="container-fluid">
+      <div class="card-deck">
+        <!-- Card -->
+        <div class="wow zoomInRight card mb-4">
+          <!--Card image-->
+          <div class="view zoom overlay">
+            <img class="card-img-top" src="Imagenes/13.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <h4 class="text-justify card-title">Reporte 7. Monto total de dinero de ventas por cliente</h4>
+            <br><button type="button" data-toggle="modal" data-target="#modal7" class="btn btn-outline-warning btn-lg btn-block">Ver<i class="fa fa-folder-open ml-2" aria-hidden="true" style="color:orange;"></i></button>
+          </div>
+        </div>
+        <!-- Card -->
+        <!-- Card -->
+        <div class="wow zoomInRight card mb-4">
+          <!--Card image-->
+          <div class="view zoom overlay">
+            <img class="card-img-top" src="Imagenes/13.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <h4 class="text-justify card-title">Reporte 8. Monto total de dinero de la cantidad vendida de los productos</h4>
+            <button type="button" data-toggle="modal" data-target="#modal8" class="btn btn-outline-warning btn-lg btn-block">Ver<i class="fa fa-folder-open ml-2" aria-hidden="true" style="color:orange;"></i></button>
+          </div>
+        </div>
+        <!-- Card -->
+        <!-- Card -->
+        <div class="wow zoomInRight card mb-4">
+          <!--Card image-->
+          <div class="view zoom overlay">
+            <img class="card-img-top" src="Imagenes/13.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <h4 class="text-justify card-title">Reporte 9. Informacion general de vendidos por año 2018</h4>
+            <br><button type="button" data-toggle="modal" data-target="#modal9" class="btn btn-outline-warning btn-lg btn-block">Ver<i class="fa fa-folder-open ml-2" aria-hidden="true" style="color:orange;"></i></button>
+          </div>
+        </div>
+        <!-- Card -->
+      </div>
+    </div>
+    <br><br><br><br><br>
+    <!-- Card deck -->
+
+    <!--Modal: modal1-->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe class="embed-responsive-item" src="Reportes/Reporte5/Reporte5.html" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal: modal1-->
+
+    <!--Modal: modal2-->
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe class="embed-responsive-item" src="Reportes/Reporte6/Reporte6.html" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal: modal2-->
+
+    <!--Modal: modal3-->
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe class="embed-responsive-item" src="Reportes/Reporte7/Reporte7.html" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal: modal3-->
+
+    <!--Modal: modal4-->
+    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe class="embed-responsive-item" src="Reportes/Reporte8/Reporte8.html" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal: modal4-->
+
+    <!--Modal: modal5-->
+    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe class="embed-responsive-item" src="Reportes/Reporte9/Reporte9.html" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal: modal5-->
+
+    <!--Modal: modal6-->
+    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe class="embed-responsive-item" src="Reportes/Reporte10/Reporte10.html" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal: modal6-->
+
+    <!--Modal: modal7-->
+    <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe class="embed-responsive-item" src="Reportes/Reporte11/Reporte11.html" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal: modal7-->
+
+    <!--Modal: modal8-->
+    <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe class="embed-responsive-item" src="Reportes/Reporte2/Reporte2.html" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal: modal8-->
+
+    <!--Modal: modal9-->
+    <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe class="embed-responsive-item" src="Reportes/Reporte3/Reporte3.html" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal: modal9-->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small black mt-4">
+      <!-- Links del Footer -->
+      <div class="container">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Acerca de</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Productos</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Sucursales</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Ayuda</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">contacto</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+        <hr class="rgba-white-light" style="margin: 0 15%;">
+        <!-- Grid row-->
+        <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+          <!-- Grid column -->
+          <div class="col-md-8 col-12 mt-5">
+            <p style="line-height: 1.7rem">
+              Una empresa con años de experiencia en el ámbito comercial dedicados a laborar
+              para el benefició de nuestros clientes. El consumo de productos de excelencia y
+              calidad es nuestro objetivó principal.
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+        <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+        <!-- Grid row-->
+        <div class="row pb-3">
+          <!-- Grid column -->
+          <div class="col-md-12">
+            <div class="mb-5 flex-center">
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <i class="fa fa-facebook fa-lg white-text mr-md-4"> </i>
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fa fa-twitter fa-lg white-text mr-md-4"> </i>
+              </a>
+              <!-- Google +-->
+              <a class="gplus-ic">
+                <i class="fa fa-google-plus fa-lg white-text mr-md-4"> </i>
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic">
+                <i class="fa fa-linkedin fa-lg white-text mr-md-4"> </i>
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic">
+                <i class="fa fa-instagram fa-lg white-text mr-md-4"> </i>
+              </a>
+              <!--Pinterest-->
+              <a class="pin-ic">
+                <i class="fa fa-pinterest fa-lg white-text"> </i>
+              </a>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </div>
+      <!-- Terminan los Links del Footer -->
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href=""> www.OnlineShop.com.mx</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <!-- JQuery, Bootstrap & MD -->
+    <script type="text/javascript" src="MDB/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="MDB/js/popper.min.js"></script>
+    <script type="text/javascript" src="MDB/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="MDB/js/mdb.min.js"></script>
+    <!-- Script para iniciar animaciones -->
+    <script>new WOW().init();</script>
+    <!--Google Maps-->
+    <script src="MDB/js/mapa.js"></script>
+  <!-- Termina cuerpo -->
+  </body>
+</html>

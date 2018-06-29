@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tienda Navii</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="MDB/fontawesome/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link href="MDB/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design -->
+    <link href="MDB/css/mdb.min.css" rel="stylesheet">
+    <!-- Estilo personal de css -->
+    <link href="MDB/css/style.css" rel="stylesheet">
+    <!-- Efecto Smooth -->
+    <script src="MDB/js/smooth-scroll.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+      // Selectors
+      ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+      header: null, // Selector for fixed headers (must be a valid CSS selector)
+      // Speed & Easing
+      speed: 2000, // Integer. How fast to complete the scroll in milliseconds
+      offset: 105, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+      easing: 'easeInOutCubic', // Easing pattern to use
+      customEasing: function (time) {
+        // Function. Custom easing pattern
+        // If this is set to anything other than null, will override the easing option above
+        // return <your formulate with time as a multiplier>
+        // Example: easeInOut Quad
+        return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+      },
+      // Callback API
+      before: function (anchor, toggle) {}, // Callback to run before scroll
+      after: function (anchor, toggle) {} // Callback to run after scroll
+      });
+    </script>
+  </head>
+  <body>
+
+    <!-- Main navigation -->
+    <header>
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <div class="container">
+          <img src="Imagenes/logo.png" width="40px" height="40px" class="mr-1">
+          <a class="navbar-brand black-text" href="#">
+            <strong>ONLINE SHOP</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active" style="background-color:#fff;">
+                <a class="nav-link black-text" href="index.html"><strong>Inicio</strong>
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link black-text" href="ubicacion.html"><strong>Ubicaciones</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link black-text" href="reporte.html"><strong>Reportes</strong></a>
+              </li>
+            </ul>
+            <form class="form-inline">
+              <div class="lg-form mt-0">
+                <input class="form-control form-control-sm mr-3 w-auto" type="text" placeholder="Buscar" aria-label="Search">
+                <i class="fa fa-search" aria-hidden="true" style="color:black;"></i>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+      <!-- Full Page Intro -->
+      <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('Imagenes/1.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-white-light d-flex justify-content-center align-items-center">
+          <!-- Content -->
+          <div class="container">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-md-12 white-text text-center">
+                <h1 class="display-3 mb-0 pt-md-5 pt-5 orange-text font-weight-bold wow fadeInDown" data-wow-delay="0.3s">ONLINE
+                  <a class="orange-text font-weight-bold">SHOP</a>
+                </h1>
+                <h5 class="text-uppercase pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 black-text font-weight-bold wow fadeInDown" data-wow-delay="0.3s">LA MEJOR CALIDAD Y PRECIO </h5>
+                <div class="wow fadeInDown" data-wow-delay="0.3s">
+                  <a data-scroll href="#sec-1" class="btn btn-warning btn-lg rounded"><i class="fa fa-info-circle mr-2" aria-hidden="true" style="color:white;"></i>Acerca de</a>
+                </div>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Content -->
+        </div>
+        <!-- Mask & flexbox options-->
+      </div>
+      <!-- Full Page Intro -->
+    </header><br><br><br>
+    <!-- Main navigation -->
+
+
+    <!-- Acerca de -->
+    <div class="container-fluid" id="sec-1">
+      <section class="my-5">
+      <!-- Section heading -->
+      <h2 class="wow fadeInDown h1-responsive font-weight-bold text-center my-5" data-wow-duration="0.6s" data-wow-delay="0.4s">¿Quiénes somos?</h2>
+      <!-- Section description -->
+      <p class="wow fadeInDown lead black-text text-center w-responsive mx-auto mb-5" data-wow-duration="1s" data-wow-delay="0.8s">
+        Una empresa con años de experiencia en el ámbito comercial dedicados a laborar
+        para el benefició de nuestros clientes. El consumo de productos de excelencia y
+        calidad es nuestro objetivó principal.
+      </p><br><br>
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-4 mb-md-0 mb-5">
+          <!-- Grid row -->
+          <div class="wow slideInLeft row" data-wow-duration="10s" data-wow-delay="0.1s">
+            <!-- Grid column -->
+            <div class="col-lg-2 col-md-3 col-2">
+              <i class="fa fa-line-chart blue-text fa-2x"></i>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-lg-10 col-md-9 col-10">
+              <h4 class="font-weight-bold">Productos de calidad</h4>
+              <p class="black-text text-justify">
+                Contamos con la más alta calidad en todos nuestros productos
+                para poderte dar una gran satisfacción al momento en que realices tu compra.
+              </p>
+              <center><a class="btn btn-warning btn-md rounded">Leer más</a></center>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-md-4 mb-md-0 mb-5">
+          <!-- Grid row -->
+          <div class="wow fadeInUp row" data-wow-duration="10s" data-wow-delay="0.1s">
+            <!-- Grid column -->
+            <div class="col-lg-2 col-md-3 col-2">
+              <i class="fa fa-money blue-text fa-2x"></i>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-lg-10 col-md-9 col-10">
+              <h4 class="font-weight-bold">Mejores precios</h4>
+              <p class="black-text text-justify">
+                Tenemos los mas bajos costos que puedes encontrar en todo el mercado
+                ya que te ofrecemos grandes descuentos y ofertas exclusivas en todos nuestros productos.
+              </p>
+              <center><a class="btn btn-warning btn-md rounded">Leer más</a></center>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-md-4">
+          <!-- Grid row -->
+          <div class="wow slideInRight row" data-wow-duration="10s" data-wow-delay="0.1s">
+            <!-- Grid column -->
+            <div class="col-lg-2 col-md-3 col-2">
+              <i class="fa fa-child blue-text fa-2x"></i>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-lg-10 col-md-9 col-10">
+              <h4 class="font-weight-bold">Atencion personalizada</h4>
+              <p class="black-text text-justify">
+                Disponemos de atención a clientes todos los días de la semana las 24
+                horas por los 365 días del año para poder ayudarte en el momento que necesites.
+              </p>
+              <center><a class="btn btn-warning btn-md rounded">Leer más</a></center>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </section>
+    </div><br><br><br>
+    <!-- Termina Acerca de -->
+
+
+    <!-- Mejores productos -->
+    <div class="container-fluid">
+      <section class="text-center my-5">
+      <!-- Section heading -->
+      <h2 class="wow fadeInDown h1-responsive font-weight-bold text-center my-5" data-wow-duration="0.6s" data-wow-delay="0.4s">Nuestros objetivos</h2>
+      <br>
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="wow rollIn col-md-12 mb-4">
+          <div class="card card-image" style="background-image: url('Imagenes/4.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 rounded">
+              <div>
+                <h3 class="py-3 pt-4 font-weight-bold">
+                  <strong>Frescura</strong>
+                </h3>
+                <p class="pb-5 pt-5">
+                  Realizar un gran esfuerzo para contar con los mejores productos frescos del mercado los cuales te
+                  harán sentir como estar en el campo en que fueron cultivados desde el momento en que los compras
+                  hasta llegar a tu casa.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="wow bounceInLeft col-md-6 mb-md-0 mb-4">
+          <div class="card card-image" style="background-image: url('Imagenes/2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 rounded">
+              <div>
+                <h3 class="py-3 pt-4 font-weight-bold">
+                    <strong>Generar satisfacción</strong>
+                </h3>
+                <p class="pb-5 pt-4">
+                  Lograr crear una gran felicidad a toda tu familia al momento de comprar nuestros productos
+                  y lograr disponer de todo tipo de productos para cada integrante de la familia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="wow bounceInRight col-md-6">
+          <div class="card card-image" style="background-image: url('Imagenes/3.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 rounded">
+              <div>
+                <h3 class="py-3 pt-4 font-weight-bold">
+                  <strong>Servicio de calidad</strong>
+                </h3>
+                <p class="pb-5 pt-4">
+                  Contar con el mejor personal calificado mediante capacitaciones contantes para darte
+                  una buena atención con un el acompañamiento de un gran servicio de calidad.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </section>
+    </div><br>
+    <!-- Termian mejores productos -->
+
+
+    <!-- Precio de Productos -->
+    <div class="container-fluid">
+      <section class="text-center my-5">
+      <!-- Section heading -->
+      <h2 class="wow fadeInDown h1-responsive font-weight-bold text-center my-5" data-wow-duration="0.6s" data-wow-delay="0.4s">Mejores productos</h2>
+      <br>
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="wow swing col-lg-3 col-md-6 mb-lg-0 mb-4">
+          <!-- Card -->
+          <div class="card align-items-center">
+            <!-- Card image -->
+            <div class="view zoom overlay">
+              <img src="Imagenes/5.jpg" class="card-img-top" style="height: 40vh;" alt="">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card image -->
+            <!-- Card content -->
+            <div class="card-body text-center">
+              <!-- Category & Title -->
+              <a href="" class="grey-text">
+                <h5>Bebidas</h5>
+              </a>
+              <h5>
+                <strong>
+                  <a href="" class="text-dark">PEPSI
+                    <span class="badge badge-pill danger-color">NUEVO</span>
+                  </a>
+                </strong>
+              </h5>
+              <h4 class="font-weight-bold blue-text">
+                <strong>$ 10</strong>
+              </h4>
+            </div>
+            <!-- Card content -->
+          </div>
+          <!-- Card -->
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="wow swing col-lg-3 col-md-6 mb-lg-0 mb-4">
+          <!-- Card -->
+          <div class="card align-items-center">
+            <!-- Card image -->
+            <div class="view zoom overlay">
+              <img src="Imagenes/8.jpg" class="card-img-top" style="height: 40vh;" alt="">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card image -->
+            <!-- Card content -->
+            <div class="card-body text-center">
+              <!-- Category & Title -->
+              <a href="" class="grey-text">
+                <h5>Enlatados</h5>
+              </a>
+              <h5>
+                <strong>
+                  <a href="" class="text-dark">Comida en lata</a>
+                </strong>
+              </h5>
+              <h4 class="font-weight-bold blue-text">
+                <strong>$ 25</strong>
+              </h4>
+            </div>
+            <!-- Card content -->
+          </div>
+          <!-- Card -->
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="wow swing col-lg-3 col-md-6 mb-md-0 mb-4">
+          <!-- Card -->
+          <div class="card align-items-center">
+            <!-- Card image -->
+            <div class="view zoom overlay">
+              <img src="Imagenes/6.jpg" class="card-img-top" style="height: 40vh;" alt="">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card image -->
+            <!-- Card content -->
+            <div class="card-body text-center">
+              <!-- Category & Title -->
+              <a href="" class="grey-text">
+                <h5>Pan</h5>
+              </a>
+              <h5>
+                <strong>
+                  <a href="" class="text-dark">Paqute bimbo
+                    <span class="badge badge-pill primary-color">MEJOR</span>
+                  </a>
+                </strong>
+              </h5>
+              <h4 class="font-weight-bold blue-text">
+                <strong>$ 120</strong>
+              </h4>
+            </div>
+            <!-- Card content -->
+          </div>
+          <!-- Card -->
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class=" wow swing col-lg-3 col-md-6">
+          <!-- Card -->
+          <div class="card align-items-center">
+            <!-- Card image -->
+            <div class="view zoom overlay">
+              <img src="Imagenes/7.jpg" class="card-img-top" style="height: 40vh;" alt="">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card image -->
+            <!-- Card content -->
+            <div class="card-body text-center">
+              <!-- Category & Title -->
+              <a href="" class="grey-text">
+                <h5>Frituras</h5>
+              </a>
+              <h5>
+                <strong>
+                  <a href="" class="text-dark">Paquete Sabritas</a>
+                </strong>
+              </h5>
+              <h4 class="font-weight-bold blue-text">
+                <strong>$ 44</strong>
+              </h4>
+            </div>
+            <!-- Card content -->
+          </div>
+          <!-- Card -->
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </section>
+    </div><br><br>
+    <!-- Terminan Precios Productos -->
+
+
+    <!-- Formulario de contacto -->
+    <div class="container">
+    <section class="wow zoomIn py-5" data-wow-duration="1.5s" data-wow-delay="0.8s">
+      <h1 class="h1 font-weight-bold text-center mb-5 pt-4">Contáctanos</h1>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="row">
+               <div class="col-lg-8">
+                <div class="card-body form">
+                 <div class="formHeader mb-1 pt-3">
+                  <h3>
+                  <i class="fa fa-envelope"></i> Datos del mensaje</h3>
+                 </div>
+                  <br>
+                  <form>
+                   <div class="row">
+                    <div class="col-md-6">
+                      <div class="md-form">
+                        <input type="text" id="form-contact-name" class="form-control">
+                        <label for="form-contact-name" class="">Nombre </label>
+                      </div>
+                     </div>
+                    <div class="col-md-6">
+                     <div class="md-form">
+                      <input type="text" id="form-contact-email" class="form-control">
+                      <label for="form-contact-email" class="">Apellidos</label>
+                     </div>
+                   </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-md-6">
+                      <div class="md-form">
+                        <input type="text" id="form-contact-phone" class="form-control">
+                        <label for="form-contact-phone" class="">Correo Electrónico</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                     <div class="md-form">
+                      <input type="text" id="form-contact-company" class="form-control">
+                      <label for="form-contact-company" class="">Número telefónico</label>
+                     </div>
+                    </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-md-12">
+                     <div class="md-form">
+                      <textarea type="text" id="form-contact-message" class="form-control md-textarea" rows="3"></textarea>
+                       <label for="form-contact-message">Mensaje</label>
+                        <a class="btn-floating btn-lg btn-primary" style="background:#3f51b5;">
+                         <i class="fa fa-send fa-lg"></i>
+                        </a>
+                     </div>
+                    </div>
+                  </div>
+                  </form>
+                 </div>
+                </div>
+               <div class="col-lg-4">
+                <div class="card-body contact text-center">
+                 <div class="mb-5">
+                  <h3>Información de contacto</h3>
+                 </div>
+                  <ul class="contact-icons list-unstyled ml-4">
+                    <li>
+                      <i class="fa fa-map-marker fa-lg"></i>
+                      <p>Jilotepec, CP 54240, MEXICO</p>
+                    </li>
+                    <li>
+                     <i class="fa fa-phone fa-lg"></i>
+                     <p>+ 044 55 78 96 32 54</p>
+                    </li>
+                    <li>
+                     <i class="fa fa-envelope fa-lg"></i>
+                     <p>OnlineShop@outlook.com</p>
+                    </li>
+                  </ul>
+                  <!-- Linea de divicion -->
+                  <hr class="hr-light mb-4 mt-4">
+                </div>
+               </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    </div>
+    <br><br><br><br>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small black mt-4">
+      <!-- Links del Footer -->
+      <div class="container">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Acerca de</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Productos</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Sucursales</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Ayuda</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">contacto</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+        <hr class="rgba-white-light" style="margin: 0 15%;">
+        <!-- Grid row-->
+        <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+          <!-- Grid column -->
+          <div class="col-md-8 col-12 mt-5">
+            <p style="line-height: 1.7rem">
+              Una empresa con años de experiencia en el ámbito comercial dedicados a laborar
+              para el benefició de nuestros clientes. El consumo de productos de excelencia y
+              calidad es nuestro objetivó principal.
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+        <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+        <!-- Grid row-->
+        <div class="row pb-3">
+          <!-- Grid column -->
+          <div class="col-md-12">
+            <div class="mb-5 flex-center">
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <i class="fa fa-facebook fa-lg white-text mr-md-4"> </i>
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fa fa-twitter fa-lg white-text mr-md-4"> </i>
+              </a>
+              <!-- Google +-->
+              <a class="gplus-ic">
+                <i class="fa fa-google-plus fa-lg white-text mr-md-4"> </i>
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic">
+                <i class="fa fa-linkedin fa-lg white-text mr-md-4"> </i>
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic">
+                <i class="fa fa-instagram fa-lg white-text mr-md-4"> </i>
+              </a>
+              <!--Pinterest-->
+              <a class="pin-ic">
+                <i class="fa fa-pinterest fa-lg white-text"> </i>
+              </a>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </div>
+      <!-- Terminan los Links del Footer -->
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href=""> www.OnlineShop.com.mx</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <!-- JQuery, Bootstrap & MD -->
+    <script type="text/javascript" src="MDB/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="MDB/js/popper.min.js"></script>
+    <script type="text/javascript" src="MDB/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="MDB/js/mdb.min.js"></script>
+    <!-- Script para iniciar animaciones -->
+    <script>new WOW().init();</script>
+  <!-- Termina cuerpo -->
+  </body>
+</html>

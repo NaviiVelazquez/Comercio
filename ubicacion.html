@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tienda Navii</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="MDB/fontawesome/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link href="MDB/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design -->
+    <link href="MDB/css/mdb.min.css" rel="stylesheet">
+    <!-- Estilo personal de css -->
+    <link href="MDB/css/style2.css" rel="stylesheet">
+    <!-- Efecto Smooth -->
+    <script src="MDB/js/smooth-scroll.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+      // Selectors
+      ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+      header: null, // Selector for fixed headers (must be a valid CSS selector)
+      // Speed & Easing
+      speed: 2000, // Integer. How fast to complete the scroll in milliseconds
+      offset: 105, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+      easing: 'easeInOutCubic', // Easing pattern to use
+      customEasing: function (time) {
+        // Function. Custom easing pattern
+        // If this is set to anything other than null, will override the easing option above
+        // return <your formulate with time as a multiplier>
+        // Example: easeInOut Quad
+        return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+      },
+      // Callback API
+      before: function (anchor, toggle) {}, // Callback to run before scroll
+      after: function (anchor, toggle) {} // Callback to run after scroll
+      });
+    </script>
+    <!--Google Maps-->
+    <script src="https://maps.google.com/maps/api/js"></script>
+    <script src="MDB/js/mapa.js"></script>
+  </head>
+  <body>
+
+    <!-- Main navigation -->
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <div class="container">
+        <img src="Imagenes/logo.png" width="40px" height="40px" class="mr-1">
+        <a class="navbar-brand black-text" href="#">
+          <strong>ONLINE SHOP</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link black-text" href="index.html"><strong>Inicio</strong>
+              </a>
+            </li>
+            <li class="nav-item active" style="background-color:#fff;">
+              <a class="nav-link black-text" href="ubicacion.html"><strong>Ubicaciones</strong></a>
+              <span class="sr-only">(current)</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link black-text" href="reporte.html"><strong>Reportes</strong></a>
+            </li>
+          </ul>
+          <form class="form-inline">
+            <div class="lg-form mt-0">
+              <input class="form-control form-control-sm mr-3 w-auto" type="text" placeholder="Buscar" aria-label="Search">
+              <i class="fa fa-search" aria-hidden="true" style="color:black;"></i>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <br><br><br><br>
+    <!-- Navbar -->
+    <!-- Main navigation -->
+
+
+    <!-- Acerca de -->
+    <div class="container-fluid" id="sec-1">
+      <section class="my-5">
+        <!-- Section heading -->
+        <h2 class="wow fadeInDown h1-responsive font-weight-bold text-center my-5" data-wow-duration="0.6s" data-wow-delay="0.4s">Nuestras Sucursales</h2>
+      </section>
+    </div><br><br><br>
+    <!-- Termina Acerca de -->
+
+
+    <!-- Mapas -->
+    <div class="wow zoomIn container-fluid" data-wow-duration="1.5s" data-wow-delay="0.8s">
+      <!--Google map-->
+      <div id="map-container" class="z-depth-1" style="height: 500px"></div>
+    </div><br><br><br><br><br>
+    <!-- Termina Mapas -->
+
+
+    <!-- Mapas -->
+    <div class="wow zoomIn container-fluid" data-wow-duration="1.5s" data-wow-delay="0.8s">
+      <!--Google map-->
+      <div id="map-container" class="z-depth-1" style="height: 500px"></div>
+    </div><br><br><br><br><br>
+    <!-- Termina Mapas -->
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small black mt-4">
+      <!-- Links del Footer -->
+      <div class="container">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Acerca de</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Productos</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Sucursales</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Ayuda</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">contacto</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+        <hr class="rgba-white-light" style="margin: 0 15%;">
+        <!-- Grid row-->
+        <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+          <!-- Grid column -->
+          <div class="col-md-8 col-12 mt-5">
+            <p style="line-height: 1.7rem">
+              Una empresa con años de experiencia en el ámbito comercial dedicados a laborar
+              para el benefició de nuestros clientes. El consumo de productos de excelencia y
+              calidad es nuestro objetivó principal.
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+        <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+        <!-- Grid row-->
+        <div class="row pb-3">
+          <!-- Grid column -->
+          <div class="col-md-12">
+            <div class="mb-5 flex-center">
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <i class="fa fa-facebook fa-lg white-text mr-md-4"> </i>
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fa fa-twitter fa-lg white-text mr-md-4"> </i>
+              </a>
+              <!-- Google +-->
+              <a class="gplus-ic">
+                <i class="fa fa-google-plus fa-lg white-text mr-md-4"> </i>
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic">
+                <i class="fa fa-linkedin fa-lg white-text mr-md-4"> </i>
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic">
+                <i class="fa fa-instagram fa-lg white-text mr-md-4"> </i>
+              </a>
+              <!--Pinterest-->
+              <a class="pin-ic">
+                <i class="fa fa-pinterest fa-lg white-text"> </i>
+              </a>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </div>
+      <!-- Terminan los Links del Footer -->
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href=""> www.OnlineShop.com.mx</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <!-- JQuery, Bootstrap & MD -->
+    <script type="text/javascript" src="MDB/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="MDB/js/popper.min.js"></script>
+    <script type="text/javascript" src="MDB/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="MDB/js/mdb.min.js"></script>
+    <!-- Script para iniciar animaciones -->
+    <script>new WOW().init();</script>
+  <!-- Termina cuerpo -->
+  </body>
+</html>
